@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina de Inicio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+
+<body>
+
+    <header>
+
+        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo">
+
+        <h1>Pagina de Inicio</h1>
+
+        <nav>
+            <a href="{{ url_for('pagina1') }}">Pagina 1</a>
+            <a href="{{ url_for('pagina2') }}">Pagina 2</a>
+            <a href="{{ url_for('pagina3') }}">Pagina 3</a>
+            <a href="{{ url_for('pagina4') }}">Pagina 4</a>
+        </nav>
+
+    </header>
+
+</body>
+
+</html>
