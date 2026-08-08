@@ -11,9 +11,11 @@
 
     <header>
 
-        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo">
+        <img src="{{ url_for('static', filename='img/logo.png') }}"
+             alt="Logo"
+             class="logo">
 
-        <h1>Pagina de Inicio</h1>
+        <h1 id="titulo-principal">Pagina de Inicio</h1>
 
         <nav>
             <a href="{{ url_for('pagina1') }}">Pagina 1</a>
@@ -23,6 +25,17 @@
         </nav>
 
     </header>
+
+    <main>
+
+        <section>
+            <h2>Bienvenidos</h2>
+            <p>
+                Esta es la pagina principal del primer parcial de Desarrollo Web.
+            </p>
+        </section>
+
+    </main>
 
 </body>
 

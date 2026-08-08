@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333333;
+    margin: 0;
+}
+
+header {
+    background-color: #1f4e79;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#titulo-principal {
+    font-size: 32px;
+}
+
+.logo {
+    width: 100px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    padding: 8px;
+}
+
+nav a:hover {
+    background-color: #163a5c;
+}
+
+main {
+    margin: 20px;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #cccccc;
+}
+
+article {
+    padding: 10px;
+}
+
+aside {
+    background-color: #e8eef4;
+    padding: 15px;
+    margin: 20px;
+    border: 1px solid #cccccc;
+}
+
+.imagen {
+    width: 300px;
+    max-width: 100%;
+}
+
+figure {
+    margin: 20px;
+}
+
+figcaption {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    border: 1px solid #999999;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #1f4e79;
+    color: white;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    margin-top: 10px;
+    border: 1px solid #cccccc;
+}
+
+input {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #999999;
+}
+
+input:focus {
+    border: 2px solid #1f4e79;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #1f4e79;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #163a5c;
+}
+
+.regresar {
+    display: inline-block;
+    background-color: #1f4e79;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 20px;
+}
+
+.regresar:hover {
+    background-color: #163a5c;
+}

@@ -20,6 +20,7 @@
 
             <article>
                 <h3>Servicio de mantenimiento</h3>
+
                 <p>
                     Se realizan revisiones y mantenimiento de impresoras
                     para mejorar su funcionamiento.
@@ -28,13 +29,15 @@
         </section>
 
         <figure>
+
             <img src="{{ url_for('static', filename='img/impresora.jpg') }}"
                  alt="Impresora"
-                 width="300">
+                 class="imagen">
 
             <figcaption>
                 Impresora utilizada para realizar mantenimiento.
             </figcaption>
+
         </figure>
 
         <section>
@@ -60,12 +63,11 @@
                 <input type="submit" value="Solicitar">
 
             </form>
-
         </section>
 
     </main>
 
-    <a href="{{ url_for('inicio') }}">Regresar al inicio</a>
+    <a class="regresar" href="{{ url_for('inicio') }}">Regresar al inicio</a>
 
 </body>
 
