@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina 2</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>Registro de Usuario</h1>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Formulario de registro</h2>
+
+            <form>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+
+                <br><br>
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo">
+
+                <br><br>
+
+                <label for="clave">Contraseña:</label>
+                <input type="password" id="clave" name="clave">
+
+                <br><br>
+
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" id="fecha" name="fecha">
+
+                <br><br>
+
+                <input type="submit" value="Registrar">
+
+            </form>
+        </section>
+
+        <section>
+            <h2>Cursos disponibles</h2>
+
+            <ul>
+                <li>
+                    Desarrollo Web
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Flask</li>
+                    </ul>
+                </li>
+
+                <li>
+                    Programacion
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <aside>
+            <h2>Informacion</h2>
+            <p>
+                Complete los datos solicitados para realizar el registro.
+            </p>
+        </aside>
+
+    </main>
+
+    <a href="{{ url_for('inicio') }}">Regresar al inicio</a>
+
+</body>
+
+</html>

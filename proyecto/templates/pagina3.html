@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina 3</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>Servicio Tecnico</h1>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Mantenimiento de impresoras</h2>
+
+            <article>
+                <h3>Servicio de mantenimiento</h3>
+                <p>
+                    Se realizan revisiones y mantenimiento de impresoras
+                    para mejorar su funcionamiento.
+                </p>
+            </article>
+        </section>
+
+        <figure>
+            <img src="{{ url_for('static', filename='img/impresora.jpg') }}"
+                 alt="Impresora"
+                 width="300">
+
+            <figcaption>
+                Impresora utilizada para realizar mantenimiento.
+            </figcaption>
+        </figure>
+
+        <section>
+            <h2>Solicitar servicio</h2>
+
+            <form>
+
+                <label for="cliente">Nombre:</label>
+                <input type="text" id="cliente" name="cliente">
+
+                <br><br>
+
+                <label for="telefono">Telefono:</label>
+                <input type="tel" id="telefono" name="telefono">
+
+                <br><br>
+
+                <label for="equipo">Tipo de equipo:</label>
+                <input type="text" id="equipo" name="equipo">
+
+                <br><br>
+
+                <input type="submit" value="Solicitar">
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <a href="{{ url_for('inicio') }}">Regresar al inicio</a>
+
+</body>
+
+</html>

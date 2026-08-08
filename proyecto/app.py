@@ -20,7 +20,11 @@ def pagina3():
 
 @app.route('/pagina4')
 def pagina4():
-    return render_template('pagina4.html')
+    return render_template('pagina4.html', nombre='Estudiante')
+
+@app.route('/estudiante/<nombre>')
+def estudiante(nombre):
+    return render_template('pagina4.html', nombre=nombre)
 
 if __name__ == '__main__':
     app.run(debug=True)

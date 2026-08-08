@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina 1</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <h1>Computadoras</h1>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Informacion</h2>
+
+            <article>
+                <h3>Equipo de computo</h3>
+                <p>
+                    Las computadoras son herramientas que permiten realizar
+                    diferentes tareas de estudio y trabajo.
+                </p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Caracteristicas</h2>
+
+            <table border="1">
+                <tr>
+                    <th>Componente</th>
+                    <th>Caracteristica</th>
+                </tr>
+
+                <tr>
+                    <td>Procesador</td>
+                    <td>Intel Core i5</td>
+                </tr>
+
+                <tr>
+                    <td>Memoria RAM</td>
+                    <td>16 GB</td>
+                </tr>
+
+                <tr>
+                    <td>Almacenamiento</td>
+                    <td>512 GB SSD</td>
+                </tr>
+            </table>
+        </section>
+
+        <figure>
+            <img src="{{ url_for('static', filename='img/computadora.jpg') }}"
+                 alt="Computadora"
+                 width="300">
+
+            <figcaption>
+                Computadora utilizada para estudio y trabajo.
+            </figcaption>
+        </figure>
+
+        <aside>
+            <h2>Dato adicional</h2>
+            <p>
+                Es importante elegir una computadora de acuerdo con las
+                necesidades del usuario.
+            </p>
+        </aside>
+
+    </main>
+
+    <a href="{{ url_for('inicio') }}">Regresar al inicio</a>
+
+</body>
+
+</html>
